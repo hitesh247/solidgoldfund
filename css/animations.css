@@ -1,0 +1,144 @@
+/* ==========================================================================
+   SOLID GOLD FUND - ANIMATION SYSTEM & DYNAMIC MOTION
+   ========================================================================== */
+
+/* Keyframe Animations */
+
+@keyframes ticker-slide {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+@keyframes pulse-dot {
+  0%, 100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  50% {
+    transform: scale(1.5);
+    opacity: 0.5;
+  }
+}
+
+@keyframes pulse-glow {
+  0% {
+    box-shadow: 0 0 0 0 rgba(245, 176, 38, 0.6), 0 0 20px rgba(245, 176, 38, 0.35);
+  }
+  50% {
+    box-shadow: 0 0 0 12px rgba(245, 176, 38, 0), 0 0 35px rgba(245, 176, 38, 0.5);
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgba(245, 176, 38, 0.6), 0 0 20px rgba(245, 176, 38, 0.35);
+  }
+}
+
+@keyframes float-slow {
+  0% {
+    transform: translateY(0px) rotate(0deg);
+  }
+  50% {
+    transform: translateY(-10px) rotate(1deg);
+  }
+  100% {
+    transform: translateY(0px) rotate(0deg);
+  }
+}
+
+@keyframes shimmer-sweep {
+  0% {
+    background-position: -200% 0;
+  }
+  100% {
+    background-position: 200% 0;
+  }
+}
+
+@keyframes border-glow-cycle {
+  0%, 100% {
+    border-color: rgba(245, 176, 38, 0.3);
+    box-shadow: 0 0 15px rgba(245, 176, 38, 0.1);
+  }
+  50% {
+    border-color: rgba(254, 226, 89, 0.7);
+    box-shadow: 0 0 30px rgba(245, 176, 38, 0.3);
+  }
+}
+
+@keyframes slide-in-toast {
+  0% {
+    opacity: 0;
+    transform: translateX(50px) scale(0.9);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0) scale(1);
+  }
+}
+
+@keyframes fade-in-up {
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes gold-sparkle {
+  0%, 100% {
+    opacity: 0.2;
+    transform: scale(0.8);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1.2);
+  }
+}
+
+/* Scroll Reveal Classes */
+.reveal-on-scroll {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.8s cubic-bezier(0.16, 1, 0.3, 1), transform 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+  will-change: opacity, transform;
+}
+
+.reveal-on-scroll.revealed {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.delay-1 { transition-delay: 0.1s; }
+.delay-2 { transition-delay: 0.2s; }
+.delay-3 { transition-delay: 0.3s; }
+.delay-4 { transition-delay: 0.4s; }
+
+/* Glowing Live Dot */
+.live-beacon {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.live-beacon::before {
+  content: '';
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--emerald-profit);
+  box-shadow: 0 0 10px var(--emerald-profit);
+  animation: pulse-dot 2s infinite;
+}
+
+/* 3D Tilt Card effect utility */
+.tilt-element {
+  transform-style: preserve-3d;
+  transition: transform 0.15s ease-out;
+}

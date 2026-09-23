@@ -1,0 +1,1093 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Solid Gold Fund — The Gold Standard of Prop Trading | 100% Payout Guarantee</title>
+  <meta name="description" content="SolidGoldFund is the premier global prop trading firm offering up to $400,000 in funded accounts. Zero minimum trading days, static drawdowns, and 100% payout reliability.">
+  <meta name="keywords" content="prop trading, forex funding, crypto prop firm, solid gold fund, XAUUSD trading, funded trader program, instant funding">
+
+  <!-- OpenGraph / Social Meta -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://solidgoldfund.net/">
+  <meta property="og:title" content="Solid Gold Fund — Prop Trading, As It Should Be">
+  <meta property="og:description" content="100% Payout Guarantee, Zero Denials. Ever. Pass in 1 day with static balance drawdown and up to 90% profit splits.">
+  <meta property="og:image" content="assets/hero-bull.jpg">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Plus+Jakarta+Sans:wght@500;600;700;800;900&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="assets/solid-gold-logo.png">
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/animations.css">
+  <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+
+  <!-- Background Particle Canvas & Ambient Lights -->
+  <canvas id="particles-canvas"></canvas>
+  <div class="bg-ambient-glow"></div>
+  <div class="bg-ambient-glow-2"></div>
+
+  <!-- ==========================================================================
+       Sticky Navigation Header
+       ========================================================================== -->
+  <header class="site-header" id="site-header">
+    <div class="container nav-container">
+      <a href="#hero" class="brand-logo" id="header-brand-logo" aria-label="Solid Gold Fund Home">
+        <img src="assets/solid-gold-logo.png" alt="Solid Gold Fund Logo" class="brand-logo-img">
+      </a>
+
+      <!-- Desktop Navigation Menu -->
+      <nav>
+        <ul class="nav-menu" id="desktop-nav-menu">
+          <li><a href="#evaluations" class="nav-link">Evaluations</a></li>
+          <li><a href="#instant-funding" class="nav-link">Instant Funded X</a></li>
+          <li><a href="#gold-rush" class="nav-link">The Gold Rush</a></li>
+          <li><a href="#calculator" class="nav-link">ROI Calculator</a></li>
+          <li><a href="#comparison" class="nav-link">Why Us</a></li>
+          <li><a href="#platforms" class="nav-link">Platforms</a></li>
+          <li><a href="#faq" class="nav-link">FAQ</a></li>
+        </ul>
+      </nav>
+
+      <!-- Nav Action CTAs -->
+      <div class="nav-actions">
+        <span class="badge badge-gold" style="cursor: default;"><span class="badge-pulse-dot"></span> EN</span>
+        <a href="https://solidgoldfunddashboard.propaccount.com/en/sign-in" target="_blank" rel="noopener" class="btn btn-secondary btn-sm" id="nav-login-btn">Trader Login</a>
+        <a href="#evaluations" class="btn btn-primary btn-sm trigger-checkout" data-plan="Forex X-1 Step Evaluation" data-size="$100,000" data-fee="$795" id="nav-get-funded-btn">Get Funded</a>
+        <button class="mobile-nav-toggle" id="mobile-nav-toggle-btn" aria-label="Toggle navigation">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 12h18M3 6h18M3 18h18"/></svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Navigation Drawer -->
+  <div class="mobile-nav-drawer" id="mobile-nav-drawer">
+    <div>
+      <div style="display:flex; justify-content:space-between; align-items:center;">
+        <div class="brand-logo">
+          <img src="assets/solid-gold-logo.png" alt="Solid Gold Fund Logo" class="brand-logo-img" style="height:48px;">
+        </div>
+        <button class="drawer-close-btn" id="mobile-drawer-close-btn">&times;</button>
+      </div>
+      <ul class="mobile-nav-links">
+        <li><a href="#evaluations">Evaluations</a></li>
+        <li><a href="#instant-funding">Instant Funded X</a></li>
+        <li><a href="#gold-rush">The Gold Rush</a></li>
+        <li><a href="#calculator">ROI Calculator</a></li>
+        <li><a href="#comparison">Why Us</a></li>
+        <li><a href="#platforms">Trading Platforms</a></li>
+        <li><a href="#faq">FAQ</a></li>
+        <li><a href="#event-spotlight">Rat Race Breaker</a></li>
+      </ul>
+    </div>
+    <div style="display:flex; flex-direction:column; gap:12px;">
+      <a href="https://solidgoldfunddashboard.propaccount.com/en/sign-in" class="btn btn-secondary" style="width:100%;">Trader Login</a>
+      <a href="#evaluations" class="btn btn-primary trigger-checkout" style="width:100%;">Get Funded</a>
+    </div>
+  </div>
+
+  <!-- ==========================================================================
+       Live Financial & Crypto Market Ticker
+       ========================================================================== -->
+  <div class="market-ticker-wrap" id="market-ticker-wrap">
+    <div class="ticker-track" id="market-ticker-track">
+      <!-- Dynamic simulated live ticks rendered via js/ticker.js -->
+    </div>
+  </div>
+
+  <main>
+    <!-- ==========================================================================
+         Hero Section
+         ========================================================================== -->
+    <section class="section hero-section" id="hero">
+      <div class="container hero-grid">
+        <!-- Hero Left Column -->
+        <div class="hero-content reveal-on-scroll">
+          <div class="hero-guarantee-pill">
+            <svg class="shield-icon" viewBox="0 0 24 24"><path d="M12 2L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-3z"/></svg>
+            <span>100% Payout Guarantee • Zero Denials. Ever.</span>
+          </div>
+
+          <h1 class="hero-title">
+            The <span class="text-gradient-gold">Gold Standard</span> of Prop Trading
+          </h1>
+
+          <p class="hero-subtitle">
+            Unleashing traders' potential with institutional liquidity, static balance-based drawdowns, zero minimum trading days, and payouts delivered on time, every time since 2023.
+          </p>
+
+          <div class="hero-cta-group">
+            <a href="#evaluations" class="btn btn-primary btn-lg" id="hero-explore-eval-btn">
+              <span>Explore Evaluations</span>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </a>
+            <a href="#instant-funding" class="btn btn-secondary btn-lg" id="hero-instant-btn">
+              <span>Instant Funded X</span>
+              <span class="badge badge-emerald">Direct Capital</span>
+            </a>
+          </div>
+
+          <!-- Hero Metrics Banner -->
+          <div class="hero-stats-banner">
+            <div class="stat-item">
+              <span class="stat-number">$1,900,000+</span>
+              <span class="stat-label">Paid to Traders</span>
+            </div>
+            <div class="stat-item">
+              <span class="stat-number">$57,973</span>
+              <span class="stat-label">Top Single Payout</span>
+            </div>
+            <div class="stat-item">
+              <span class="stat-number">0 Days</span>
+              <span class="stat-label">Min. Trading Days</span>
+            </div>
+            <div class="stat-item">
+              <span class="stat-number">100%</span>
+              <span class="stat-label">Reliability Record</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Hero Right Column (3D Visual & Floating Badges) -->
+        <div class="hero-visual reveal-on-scroll delay-2">
+          <div class="hero-image-wrap tilt-element">
+            <img src="assets/hero-bull.jpg" alt="Solid Gold Fund Bullion Sculpture & Financial Charts" id="hero-main-img">
+            
+            <!-- Floating Top Card -->
+            <div class="hero-floating-card card-top">
+              <div class="floating-card-flex">
+                <div class="floating-icon-box gold">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                </div>
+                <div>
+                  <div class="floating-card-val">Trustpilot 4.9 / 5.0</div>
+                  <div class="floating-card-sub">Recognized Most Transparent</div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Floating Bottom Card -->
+            <div class="hero-floating-card card-bottom">
+              <div class="floating-card-flex">
+                <div class="floating-icon-box">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg>
+                </div>
+                <div>
+                  <div class="floating-card-val text-gradient-emerald">+$57,973 Payout</div>
+                  <div class="floating-card-sub">Processed in &lt; 4 Hours</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         VIP Event Spotlight: "RAT RACE BREAKER" (2-Day Masterclass)
+         ========================================================================== -->
+    <section class="section" id="event-spotlight" style="padding-top: 0;">
+      <div class="container">
+        <div class="event-spotlight-card reveal-on-scroll">
+          <div class="event-grid">
+            <div>
+              <div class="event-badge">
+                <span class="badge-pulse-dot"></span> LIVE ZOOM INTENSIVE EVENT
+              </div>
+              <h2 class="event-title">
+                “RAT RACE BREAKER” <span class="text-gradient-gold">Masterclass</span>
+              </h2>
+              <p class="event-desc">
+                Join our 2-day intensive live masterclass (1:00 PM – 6:00 PM GMT+8). Master high-probability Gold (XAUUSD) execution, institutional risk frameworks, and prop evaluation passing formulas.
+              </p>
+
+              <!-- Live Countdown Clock -->
+              <div class="countdown-timer-wrap">
+                <div class="countdown-box">
+                  <div class="countdown-val" id="countdown-days">03</div>
+                  <div class="countdown-unit">Days</div>
+                </div>
+                <div class="countdown-box">
+                  <div class="countdown-val" id="countdown-hours">14</div>
+                  <div class="countdown-unit">Hours</div>
+                </div>
+                <div class="countdown-box">
+                  <div class="countdown-val" id="countdown-mins">42</div>
+                  <div class="countdown-unit">Mins</div>
+                </div>
+                <div class="countdown-box">
+                  <div class="countdown-val" id="countdown-secs">08</div>
+                  <div class="countdown-unit">Secs</div>
+                </div>
+              </div>
+
+              <div style="display:flex; gap:16px; flex-wrap:wrap; align-items:center;">
+                <button class="btn btn-primary trigger-masterclass" id="event-reserve-seat-btn">
+                  <span>Claim Free VIP Seat</span>
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                </button>
+                <span style="font-size:0.85rem; color:var(--text-muted); font-family:var(--font-mono);">
+                  ⚡ Only 28 of 300 Zoom Seats Left
+                </span>
+              </div>
+            </div>
+
+            <div class="event-image-wrap">
+              <img src="assets/event-banner.jpg" alt="Rat Race Breaker VIP Masterclass Banner" id="event-banner-img">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         Interactive Challenge Configurator (Core Highlight)
+         ========================================================================== -->
+    <section class="section" id="evaluations">
+      <div class="container">
+        <div class="section-header reveal-on-scroll">
+          <div class="section-tag">
+            <svg viewBox="0 0 24 24"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
+            EVALUATE YOUR SKILLS
+          </div>
+          <h2>Choose Your <span class="text-gradient-gold">Funding Program</span></h2>
+          <p>Manage up to $1,000,000 in active simulated capital with zero hidden consistency traps and transparent static drawdowns.</p>
+        </div>
+
+        <div class="configurator-wrapper reveal-on-scroll delay-1">
+          <!-- Program Categories Navigation -->
+          <div class="program-tabs-nav" id="program-tabs-nav">
+            <button class="program-tab-btn active" data-program="forex-1step" id="tab-forex-1step">
+              <span class="live-beacon"></span> Forex 1-Step (X-1)
+            </button>
+            <button class="program-tab-btn" data-program="forex-2step" id="tab-forex-2step">
+              Forex 2-Step (X-2)
+            </button>
+            <button class="program-tab-btn" data-program="crypto-eval" id="tab-crypto-eval">
+              Crypto 24/7 Evaluation
+            </button>
+            <button class="program-tab-btn" data-program="gold-rush" id="tab-gold-rush">
+              The Gold Rush (XAUUSD)
+            </button>
+            <button class="program-tab-btn" data-program="instant-funded" id="tab-instant-funded">
+              Instant Funded X
+            </button>
+          </div>
+
+          <!-- Account Capital Selector -->
+          <div>
+            <span class="account-size-label">Select Simulated Account Capital Size:</span>
+            <div class="size-pills-grid" id="size-pills-grid">
+              <button class="size-pill-btn" data-size="5000">$5,000</button>
+              <button class="size-pill-btn" data-size="10000">$10,000</button>
+              <button class="size-pill-btn" data-size="25000">$25,000</button>
+              <button class="size-pill-btn" data-size="50000">$50,000</button>
+              <button class="size-pill-btn active" data-size="100000">$100,000</button>
+              <button class="size-pill-btn" data-size="200000">$200,000</button>
+              <button class="size-pill-btn" data-size="250000">$250,000</button>
+              <button class="size-pill-btn" data-size="400000">$400,000</button>
+            </div>
+          </div>
+
+          <!-- Dynamic Configurator Rules & Pricing Breakdown -->
+          <div class="configurator-details-grid">
+            <!-- Rules Table Box -->
+            <div class="rules-table-box">
+              <div class="rules-table-header">
+                <span style="font-weight: 700; font-size: 1.1rem; color: var(--text-primary);">Program Rules & Parameters</span>
+                <span class="badge badge-gold" id="cfg-plan-badge">1-Step Rapid Pass</span>
+              </div>
+
+              <div class="rules-list">
+                <div class="rule-row">
+                  <span class="rule-name">🎯 Profit Target</span>
+                  <span class="rule-value highlight-gold" id="rule-target">10% (Phase 1 Only)</span>
+                </div>
+                <div class="rule-row">
+                  <span class="rule-name">📉 Daily Max Loss</span>
+                  <span class="rule-value" id="rule-dailyloss">5%</span>
+                </div>
+                <div class="rule-row">
+                  <span class="rule-name">🛡 Max Static Drawdown</span>
+                  <span class="rule-value highlight-emerald" id="rule-drawdown">6% (Static Balance)</span>
+                </div>
+                <div class="rule-row">
+                  <span class="rule-name">⚡ Leverage</span>
+                  <span class="rule-value" id="rule-leverage">50:1</span>
+                </div>
+                <div class="rule-row">
+                  <span class="rule-name">⏱ Minimum Trading Days</span>
+                  <span class="rule-value highlight-gold" id="rule-mindays">0 Days (Pass in 1 Day)</span>
+                </div>
+                <div class="rule-row">
+                  <span class="rule-name">⏳ Evaluation Duration</span>
+                  <span class="rule-value" id="rule-duration">Infinite (No Time Limit)</span>
+                </div>
+                <div class="rule-row">
+                  <span class="rule-name">💰 Profit Split</span>
+                  <span class="rule-value highlight-emerald" id="rule-profitsplit">80% (Up to 90%)</span>
+                </div>
+                <div class="rule-row">
+                  <span class="rule-name">🔒 Lock Capital Upon Payout</span>
+                  <span class="rule-value" id="rule-lockpayout">No Lock</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Pricing Summary & Addons Box -->
+            <div class="pricing-summary-box">
+              <div class="pricing-header-top">
+                <div class="pricing-plan-name" id="cfg-plan-name">Forex X-1 Step Evaluation</div>
+                <div class="pricing-account-size" id="cfg-account-size">$100,000</div>
+              </div>
+
+              <!-- Add-ons Selection -->
+              <div class="addons-section">
+                <div class="addons-title">Enhance Your Account (Optional Add-ons):</div>
+                
+                <label class="addon-toggle-item" id="addon-item-profit90">
+                  <div class="addon-left">
+                    <input type="checkbox" class="addon-checkbox" data-addon="profit90" id="addon-chk-profit90">
+                    <span>90% Lifetime Profit Split</span>
+                  </div>
+                  <span class="addon-price">+15%</span>
+                </label>
+
+                <label class="addon-toggle-item" id="addon-item-weekendHold">
+                  <div class="addon-left">
+                    <input type="checkbox" class="addon-checkbox" data-addon="weekendHold" id="addon-chk-weekendHold">
+                    <span>Weekend Holding Enabled</span>
+                  </div>
+                  <span class="addon-price">+10%</span>
+                </label>
+
+                <label class="addon-toggle-item" id="addon-item-doubleLeverage">
+                  <div class="addon-left">
+                    <input type="checkbox" class="addon-checkbox" data-addon="doubleLeverage" id="addon-chk-doubleLeverage">
+                    <span>Double Leverage (100:1)</span>
+                  </div>
+                  <span class="addon-price">+12%</span>
+                </label>
+              </div>
+
+              <!-- Fee & Checkout CTA -->
+              <div class="pricing-total-wrap">
+                <div class="total-fee-label">One-Time Registration Fee:</div>
+                <div class="total-fee-amount" id="cfg-total-fee">$795</div>
+                <div class="total-fee-refundable">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg>
+                  <span>100% Refundable on First Payout</span>
+                </div>
+              </div>
+
+              <button class="btn btn-primary btn-lg trigger-checkout" id="configurator-checkout-btn" data-plan="Forex X-1 Step Evaluation" data-size="$100,000" data-fee="$795">
+                <span>Get Started Now</span>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         Direct Instant Funding (Instant Funded X)
+         ========================================================================== -->
+    <section class="section" id="instant-funding" style="background: rgba(11, 15, 25, 0.5);">
+      <div class="container">
+        <div class="section-header reveal-on-scroll">
+          <div class="section-tag">
+            <svg viewBox="0 0 24 24"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>
+            INSTANT ACCESS
+          </div>
+          <h2>Skip Evaluations with <span class="text-gradient-gold">Instant Funded X</span></h2>
+          <p>Zero challenge phases. Zero waiting periods. Trade live simulated funded capital from day one with daily loss protection and bi-weekly payouts.</p>
+        </div>
+
+        <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(280px, 1fr)); gap:24px;" class="reveal-on-scroll delay-1">
+          <!-- Card 1: $10k Instant -->
+          <div class="glass-card" style="padding: 32px; display:flex; flex-direction:column; justify-content:space-between;">
+            <div>
+              <div class="badge badge-emerald" style="margin-bottom:12px;">Instant Capital</div>
+              <h3 style="font-size:1.8rem; font-family:var(--font-mono); margin-bottom:6px;">$10,000</h3>
+              <p style="color:var(--text-secondary); font-size:0.9rem; margin-bottom:20px;">Direct capital allocation with no profit target constraint.</p>
+              
+              <div style="display:flex; flex-direction:column; gap:10px; font-size:0.88rem; margin-bottom:24px;">
+                <div style="display:flex; justify-content:space-between; border-bottom:1px dashed rgba(255,255,255,0.07); padding-bottom:6px;">
+                  <span class="text-muted">Max Trailing DD:</span>
+                  <span class="font-mono" style="font-weight:700;">8%</span>
+                </div>
+                <div style="display:flex; justify-content:space-between; border-bottom:1px dashed rgba(255,255,255,0.07); padding-bottom:6px;">
+                  <span class="text-muted">Daily Loss Limit:</span>
+                  <span class="font-mono" style="font-weight:700;">5%</span>
+                </div>
+                <div style="display:flex; justify-content:space-between; border-bottom:1px dashed rgba(255,255,255,0.07); padding-bottom:6px;">
+                  <span class="text-muted">Profit Split:</span>
+                  <span class="font-mono text-gradient-emerald" style="font-weight:700;">80% – 90%</span>
+                </div>
+              </div>
+            </div>
+            <div>
+              <div style="font-family:var(--font-mono); font-size:2rem; font-weight:800; color:var(--gold-light); margin-bottom:12px;">$400 <span style="font-size:0.8rem; color:var(--text-muted); font-weight:normal;">one-time</span></div>
+              <button class="btn btn-secondary trigger-checkout" style="width:100%;" data-plan="Instant Funded X" data-size="$10,000" data-fee="$400">Get $10K Instant</button>
+            </div>
+          </div>
+
+          <!-- Card 2: $50k Instant (Popular) -->
+          <div class="glass-card glass-card-gold-glow" style="padding: 32px; display:flex; flex-direction:column; justify-content:space-between; border-color:var(--gold-primary);">
+            <div>
+              <div class="badge badge-gold" style="margin-bottom:12px;">⭐ Most Popular</div>
+              <h3 style="font-size:1.8rem; font-family:var(--font-mono); margin-bottom:6px;">$50,000</h3>
+              <p style="color:var(--text-secondary); font-size:0.9rem; margin-bottom:20px;">Ideal balance for experienced traders seeking substantial payouts.</p>
+              
+              <div style="display:flex; flex-direction:column; gap:10px; font-size:0.88rem; margin-bottom:24px;">
+                <div style="display:flex; justify-content:space-between; border-bottom:1px dashed rgba(255,255,255,0.07); padding-bottom:6px;">
+                  <span class="text-muted">Max Trailing DD:</span>
+                  <span class="font-mono" style="font-weight:700;">8%</span>
+                </div>
+                <div style="display:flex; justify-content:space-between; border-bottom:1px dashed rgba(255,255,255,0.07); padding-bottom:6px;">
+                  <span class="text-muted">Daily Loss Limit:</span>
+                  <span class="font-mono" style="font-weight:700;">5%</span>
+                </div>
+                <div style="display:flex; justify-content:space-between; border-bottom:1px dashed rgba(255,255,255,0.07); padding-bottom:6px;">
+                  <span class="text-muted">Profit Split:</span>
+                  <span class="font-mono text-gradient-emerald" style="font-weight:700;">80% – 90%</span>
+                </div>
+              </div>
+            </div>
+            <div>
+              <div style="font-family:var(--font-mono); font-size:2rem; font-weight:800; color:var(--gold-light); margin-bottom:12px;">$2,500 <span style="font-size:0.8rem; color:var(--text-muted); font-weight:normal;">one-time</span></div>
+              <button class="btn btn-primary trigger-checkout" style="width:100%;" data-plan="Instant Funded X" data-size="$50,000" data-fee="$2,500">Get $50K Instant</button>
+            </div>
+          </div>
+
+          <!-- Card 3: $100k Instant -->
+          <div class="glass-card" style="padding: 32px; display:flex; flex-direction:column; justify-content:space-between;">
+            <div>
+              <div class="badge badge-emerald" style="margin-bottom:12px;">Institutional Scale</div>
+              <h3 style="font-size:1.8rem; font-family:var(--font-mono); margin-bottom:6px;">$100,000</h3>
+              <p style="color:var(--text-secondary); font-size:0.9rem; margin-bottom:20px;">Maximum direct funding with custom institutional scaling.</p>
+              
+              <div style="display:flex; flex-direction:column; gap:10px; font-size:0.88rem; margin-bottom:24px;">
+                <div style="display:flex; justify-content:space-between; border-bottom:1px dashed rgba(255,255,255,0.07); padding-bottom:6px;">
+                  <span class="text-muted">Max Trailing DD:</span>
+                  <span class="font-mono" style="font-weight:700;">8%</span>
+                </div>
+                <div style="display:flex; justify-content:space-between; border-bottom:1px dashed rgba(255,255,255,0.07); padding-bottom:6px;">
+                  <span class="text-muted">Daily Loss Limit:</span>
+                  <span class="font-mono" style="font-weight:700;">5%</span>
+                </div>
+                <div style="display:flex; justify-content:space-between; border-bottom:1px dashed rgba(255,255,255,0.07); padding-bottom:6px;">
+                  <span class="text-muted">Profit Split:</span>
+                  <span class="font-mono text-gradient-emerald" style="font-weight:700;">80% – 90%</span>
+                </div>
+              </div>
+            </div>
+            <div>
+              <div style="font-family:var(--font-mono); font-size:2rem; font-weight:800; color:var(--gold-light); margin-bottom:12px;">$4,800 <span style="font-size:0.8rem; color:var(--text-muted); font-weight:normal;">one-time</span></div>
+              <button class="btn btn-secondary trigger-checkout" style="width:100%;" data-plan="Instant Funded X" data-size="$100,000" data-fee="$4,800">Get $100K Instant</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         Interactive Profit & ROI Calculator
+         ========================================================================== -->
+    <section class="section" id="calculator">
+      <div class="container">
+        <div class="section-header reveal-on-scroll">
+          <div class="section-tag">
+            <svg viewBox="0 0 24 24"><path d="M4 4h16v16H4zM4 9h16M9 4v16"/></svg>
+            POTENTIAL EARNINGS
+          </div>
+          <h2>Live Profit & <span class="text-gradient-gold">Payout Calculator</span></h2>
+          <p>Adjust your account size and expected monthly return percentage to see projected trader payout earnings.</p>
+        </div>
+
+        <div class="calculator-card reveal-on-scroll delay-1">
+          <div class="calculator-grid">
+            <!-- Left: Range Sliders -->
+            <div>
+              <!-- Account Size Slider -->
+              <div class="slider-group">
+                <div class="slider-header">
+                  <span class="slider-title">Simulated Account Capital:</span>
+                  <span class="slider-display-val" id="calc-balance-display">$100,000</span>
+                </div>
+                <input type="range" class="custom-range" id="calc-balance-slider" min="5000" max="400000" step="5000" value="100000">
+                <div style="display:flex; justify-content:space-between; font-size:0.75rem; color:var(--text-muted); margin-top:8px; font-family:var(--font-mono);">
+                  <span>$5K</span>
+                  <span>$50K</span>
+                  <span>$100K</span>
+                  <span>$250K</span>
+                  <span>$400K</span>
+                </div>
+              </div>
+
+              <!-- Monthly Return % Slider -->
+              <div class="slider-group">
+                <div class="slider-header">
+                  <span class="slider-title">Expected Monthly Gain:</span>
+                  <span class="slider-display-val" id="calc-gain-display">8%</span>
+                </div>
+                <input type="range" class="custom-range" id="calc-gain-slider" min="2" max="25" step="0.5" value="8">
+                <div style="display:flex; justify-content:space-between; font-size:0.75rem; color:var(--text-muted); margin-top:8px; font-family:var(--font-mono);">
+                  <span>2% (Conservative)</span>
+                  <span>8% (Target)</span>
+                  <span>15% (Pro)</span>
+                  <span>25% (Exceptional)</span>
+                </div>
+              </div>
+
+              <!-- Profit Split Selector -->
+              <div style="display:flex; align-items:center; gap:14px; margin-top:20px;">
+                <span style="font-size:0.95rem; font-weight:700; color:var(--text-secondary);">Profit Split Model:</span>
+                <select id="calc-split-select" style="background:rgba(14,20,33,0.9); border:1px solid var(--border-gold); color:var(--text-primary); padding:8px 14px; border-radius:8px; font-family:var(--font-display); font-weight:700; outline:none; cursor:pointer;">
+                  <option value="80">Standard 80% Trader Share</option>
+                  <option value="85">Pro 85% Trader Share</option>
+                  <option value="90" selected>VIP Add-on 90% Trader Share</option>
+                </select>
+              </div>
+            </div>
+
+            <!-- Right: Dynamic Calculations Result Box -->
+            <div class="calc-result-box">
+              <div class="calc-payout-title">Estimated Monthly Trader Payout:</div>
+              <div class="calc-payout-amount" id="calc-trader-payout">$7,200</div>
+              <div class="calc-payout-split">✓ Guaranteed Direct Bi-Weekly Payout</div>
+
+              <div class="calc-breakdown-row">
+                <span>Total Account Profit:</span>
+                <span id="calc-total-profit">$8,000</span>
+              </div>
+              <div class="calc-breakdown-row">
+                <span>Solid Gold Fund Share:</span>
+                <span id="calc-fund-share">$800</span>
+              </div>
+              <div class="calc-breakdown-row">
+                <span>Projected Annual Take-Home:</span>
+                <span id="calc-annual-payout" style="color:var(--gold-light);">$86,400/yr</span>
+              </div>
+
+              <button class="btn btn-primary" style="width:100%; margin-top:24px;" onclick="document.getElementById('evaluations').scrollIntoView({behavior:'smooth'})">
+                Unlock This Account
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         Competitor Comparison Matrix (Why Solid Gold Fund)
+         ========================================================================== -->
+    <section class="section" id="comparison">
+      <div class="container">
+        <div class="section-header reveal-on-scroll">
+          <div class="section-tag">
+            <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            UNBEATABLE ADVANTAGE
+          </div>
+          <h2>Why Traders Choose <span class="text-gradient-gold">Solid Gold Fund</span></h2>
+          <p>Transparent rules engineered for trader success. See how our conditions outperform industry incumbents.</p>
+        </div>
+
+        <div class="comparison-table-wrap reveal-on-scroll delay-1">
+          <table class="comparison-table">
+            <thead>
+              <tr>
+                <th>Feature / Rule</th>
+                <th class="highlight-col">⭐ Solid Gold Fund</th>
+                <th>FTMO</th>
+                <th>FundedNext</th>
+                <th>Generic Prop Firms</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><strong>Min. Trading Days</strong></td>
+                <td class="highlight-col"><span class="feature-check">✓ 0 Days (Pass in 1 Day)</span></td>
+                <td>4 Days</td>
+                <td>5 Days</td>
+                <td>5 to 10 Days</td>
+              </tr>
+              <tr>
+                <td><strong>Drawdown Calculation</strong></td>
+                <td class="highlight-col"><span class="feature-check">✓ Static Balance-Based</span></td>
+                <td>Balance / Equity</td>
+                <td>Trailing Balance</td>
+                <td>Trailing Equity (Traps)</td>
+              </tr>
+              <tr>
+                <td><strong>Payout Guarantee</strong></td>
+                <td class="highlight-col"><span class="feature-check">✓ 100% Payout Guarantee</span></td>
+                <td>Standard Payout</td>
+                <td>Standard Payout</td>
+                <td>Strict Denials</td>
+              </tr>
+              <tr>
+                <td><strong>Profits Paid After Breach</strong></td>
+                <td class="highlight-col"><span class="feature-check">✓ Yes (Up to 90% Paid)</span></td>
+                <td><span class="feature-cross">✗ No Payout</span></td>
+                <td><span class="feature-cross">✗ No Payout</span></td>
+                <td><span class="feature-cross">✗ No Payout</span></td>
+              </tr>
+              <tr>
+                <td><strong>Weekend Holding</strong></td>
+                <td class="highlight-col"><span class="feature-check">✓ Allowed (Standard)</span></td>
+                <td>Swing Accounts Only</td>
+                <td>Allowed</td>
+                <td>Restricted</td>
+              </tr>
+              <tr>
+                <td><strong>Crypto 24/7 Evaluation</strong></td>
+                <td class="highlight-col"><span class="feature-check">✓ Dedicated 24/7 Crypto</span></td>
+                <td><span class="feature-cross">✗ Weekdays Only</span></td>
+                <td>Limited Pairs</td>
+                <td><span class="feature-cross">✗ Not Supported</span></td>
+              </tr>
+              <tr>
+                <td><strong>Profit Split Range</strong></td>
+                <td class="highlight-col"><span class="feature-check">✓ 80% to 90%</span></td>
+                <td>80% to 90%</td>
+                <td>80% to 90%</td>
+                <td>70% to 80%</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         Trading Platforms & Technology Ecosystem
+         ========================================================================== -->
+    <section class="section" id="platforms" style="background: rgba(11, 15, 25, 0.4);">
+      <div class="container">
+        <div class="section-header reveal-on-scroll">
+          <div class="section-tag">
+            <svg viewBox="0 0 24 24"><path d="M2 3h20v14H2zM8 21h8M12 17v4"/></svg>
+            INSTITUTIONAL EXECUTION
+          </div>
+          <h2>Your Favorite Platforms, <span class="text-gradient-gold">All in One Place</span></h2>
+          <p>Zero markup raw spreads, ultra-low latency server bridges, and seamless integration with the industry's most respected trading engines.</p>
+        </div>
+
+        <div class="platform-grid reveal-on-scroll delay-1">
+          <!-- Platform 1: cTrader -->
+          <div class="glass-card platform-card">
+            <div class="platform-icon-wrap">
+              <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
+            </div>
+            <h3 class="platform-title">cTrader</h3>
+            <p class="platform-desc">Advanced Level II depth of market, cBot automated algorithm execution, custom indicators, and lightning-fast millisecond routing.</p>
+          </div>
+
+          <!-- Platform 2: MatchTrader -->
+          <div class="glass-card platform-card">
+            <div class="platform-icon-wrap">
+              <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+            </div>
+            <h3 class="platform-title">Match-Trader</h3>
+            <p class="platform-desc">Next-generation web & mobile trading interface with intuitive chart trading, TradingView integration, and seamless order management.</p>
+          </div>
+
+          <!-- Platform 3: DXtrade -->
+          <div class="glass-card platform-card">
+            <div class="platform-icon-wrap">
+              <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
+            </div>
+            <h3 class="platform-title">DXtrade</h3>
+            <p class="platform-desc">Modular multi-asset trading suite designed for institutional precision with integrated risk monitors, journals, and multi-monitor layouts.</p>
+          </div>
+        </div>
+
+        <!-- Dashboard Image Preview -->
+        <div style="margin-top: 50px; text-align: center;" class="reveal-on-scroll delay-2">
+          <div class="glass-card" style="padding: 16px; border-radius: 24px; max-width: 960px; margin: 0 auto; box-shadow: 0 20px 60px rgba(0,0,0,0.8), 0 0 30px rgba(245, 176, 38, 0.15);">
+            <img src="assets/dashboard-preview.jpg" alt="Solid Gold Fund Trading Dashboard Interface" style="width: 100%; height: auto; border-radius: 16px; display: block;" id="dashboard-preview-img">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         Live Verified Payouts Wall & Leaderboard
+         ========================================================================== -->
+    <section class="section" id="payouts">
+      <div class="container">
+        <div class="section-header reveal-on-scroll">
+          <div class="section-tag">
+            <svg viewBox="0 0 24 24"><path d="M12 1v22M17 5H9.5a3.5 3.5 0 000 7h5a3.5 3.5 0 010 7H6"/></svg>
+            PROVEN TRACK RECORD
+          </div>
+          <h2>Live Verified <span class="text-gradient-gold">Trader Payouts</span></h2>
+          <p>Over $1.9 Million paid out directly to funded traders worldwide with 100% on-time settlement record.</p>
+        </div>
+
+        <div class="payout-ticker-wrap">
+          <div class="payout-ticker-track" id="payout-ticker-track">
+            <!-- Payout cards dynamically injected from js/ticker.js -->
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         Multi-Category FAQ Accordion
+         ========================================================================== -->
+    <section class="section" id="faq" style="background: rgba(11, 15, 25, 0.5);">
+      <div class="container">
+        <div class="section-header reveal-on-scroll">
+          <div class="section-tag">
+            <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M9.09 9a3 3 0 015.83 1c0 2-3 3-3 3M12 17h.01"/></svg>
+            EVERYTHING YOU NEED TO KNOW
+          </div>
+          <h2>Frequently Asked <span class="text-gradient-gold">Questions</span></h2>
+          <p>Clear, direct answers regarding our evaluation rules, static drawdown models, instant funding, and payout timelines.</p>
+        </div>
+
+        <div class="faq-grid reveal-on-scroll delay-1">
+          <!-- FAQ Category Filter Tabs -->
+          <div class="faq-categories-nav">
+            <button class="faq-cat-btn active" data-category="all">All Topics</button>
+            <button class="faq-cat-btn" data-category="evaluations">Evaluation Rules</button>
+            <button class="faq-cat-btn" data-category="drawdowns">Static Drawdowns</button>
+            <button class="faq-cat-btn" data-category="instant">Instant Funded X</button>
+            <button class="faq-cat-btn" data-category="payouts">Payouts & Breaches</button>
+            <button class="faq-cat-btn" data-category="affiliate">Affiliate Program</button>
+          </div>
+
+          <!-- FAQ Accordion Items -->
+          <div class="faq-accordion-list">
+            <!-- FAQ 1 -->
+            <div class="faq-item" data-category="evaluations">
+              <button class="faq-question-btn">
+                <span>Are there really 0 Minimum Trading Days? Can I pass in 1 day?</span>
+                <span class="faq-arrow">▼</span>
+              </button>
+              <div class="faq-answer">
+                <p>Yes! Unlike traditional prop firms that force you to wait 4–10 days before advancing, Solid Gold Fund has <strong>0 minimum trading days</strong>. If you reach your profit target responsibly in a single day, your funded account credentials are generated immediately.</p>
+              </div>
+            </div>
+
+            <!-- FAQ 2 -->
+            <div class="faq-item" data-category="drawdowns">
+              <button class="faq-question-btn">
+                <span>How does the Static Balance Drawdown work?</span>
+                <span class="faq-arrow">▼</span>
+              </button>
+              <div class="faq-answer">
+                <p>Our drawdowns are calculated strictly from your starting account balance, not trailing high-water marks or intraday unrealized floating equity. For example, on a $100,000 account with a 6% static drawdown, your breach level is fixed at $94,000. Even if your balance climbs to $110,000, your drawdown floor does not trap your open profits.</p>
+              </div>
+            </div>
+
+            <!-- FAQ 3 -->
+            <div class="faq-item" data-category="payouts">
+              <button class="faq-question-btn">
+                <span>What is the 100% Payout Guarantee with Zero Denials?</span>
+                <span class="faq-arrow">▼</span>
+              </button>
+              <div class="faq-answer">
+                <p>Since our establishment in 2023, Solid Gold Fund maintains a spotless record with zero denied payouts. As long as trades were executed within regular risk rules (no prohibited latency arbitrage or platform exploitation), your payout is approved and dispatched in crypto (USDT/BTC), Bank Wire, or Rise within 4 to 24 hours.</p>
+              </div>
+            </div>
+
+            <!-- FAQ 4 -->
+            <div class="faq-item" data-category="payouts">
+              <button class="faq-question-btn">
+                <span>Can I still receive my profits even if my account is breached later?</span>
+                <span class="faq-arrow">▼</span>
+              </button>
+              <div class="faq-answer">
+                <p>Yes! Solid Gold Fund is one of the few prop firms that honors your earned profits. If you accumulated legitimate profits and subsequently hit a drawdown breach, your eligible profit split on realized gains is still paid out during the cycle.</p>
+              </div>
+            </div>
+
+            <!-- FAQ 5 -->
+            <div class="faq-item" data-category="instant">
+              <button class="faq-question-btn">
+                <span>How does Instant Funded X differ from standard evaluations?</span>
+                <span class="faq-arrow">▼</span>
+              </button>
+              <div class="faq-answer">
+                <p>Instant Funded X allows you to bypass all challenge phases completely. Upon fee settlement, you receive immediate live simulated account credentials with up to 90% profit split and bi-weekly payouts from day one.</p>
+              </div>
+            </div>
+
+            <!-- FAQ 6 -->
+            <div class="faq-item" data-category="affiliate">
+              <button class="faq-question-btn">
+                <span>How much can I earn with the Solid Gold Partner & Affiliate program?</span>
+                <span class="faq-arrow">▼</span>
+              </button>
+              <div class="faq-answer">
+                <p>Affiliates earn up to <strong>20% lifetime recurring commission</strong> on all referred challenge purchases. Commissions are paid out weekly via USDT or bank transfer with zero minimum withdrawal thresholds.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         Affiliate & Partner Showcase Banner
+         ========================================================================== -->
+    <section class="section" id="affiliate" style="padding-top: 0;">
+      <div class="container">
+        <div class="glass-card glass-card-gold-glow reveal-on-scroll" style="padding: 48px; border-color: var(--border-gold); background: linear-gradient(135deg, rgba(26,20,10,0.85) 0%, rgba(14,20,33,0.95) 100%);">
+          <div style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:30px;">
+            <div style="max-width:650px;">
+              <div class="badge badge-gold" style="margin-bottom:12px;">PARTNER PROGRAM</div>
+              <h2 style="font-size:clamp(1.8rem, 3vw, 2.4rem); margin-bottom:12px;">Earn Up to <span class="text-gradient-gold">20% Lifetime Commission</span></h2>
+              <p style="color:var(--text-secondary); font-size:1rem; line-height:1.7;">
+                Join over 1,200 active educators, influencers, and community leaders monetizing their trading audience with instant marketing dashboards, customized promo codes, and automated weekly payouts.
+              </p>
+            </div>
+            <div>
+              <a href="mailto:solidgoldfund@propaccount.com?subject=Affiliate%20Partnership%20Inquiry" class="btn btn-primary btn-lg" id="affiliate-apply-btn">
+                <span>Become a Partner</span>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ==========================================================================
+       Site Footer
+       ========================================================================== -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-top-grid">
+        <!-- Col 1: Brand Info -->
+        <div class="footer-brand">
+          <a href="#hero" class="brand-logo">
+            <img src="assets/solid-gold-logo.png" alt="Solid Gold Fund Logo" class="brand-logo-img" style="height:62px;">
+          </a>
+          <p>
+            The world's most transparent proprietary trading firm. Enabling disciplined traders worldwide to access professional capital with 100% payout reliability.
+          </p>
+          <div class="footer-social-links">
+            <a href="https://t.me/kirkoins" target="_blank" rel="noopener" class="social-icon-btn" aria-label="Telegram">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm4.64 6.8c-.15 1.58-.8 5.42-1.13 7.19-.14.75-.42 1-.68 1.03-.58.05-1.02-.38-1.58-.75-.88-.58-1.38-.94-2.23-1.5-.99-.65-.35-1.01.22-1.59.15-.15 2.71-2.48 2.76-2.69a.2.2 0 00-.05-.18c-.06-.05-.14-.03-.21-.02-.09.02-1.49.95-4.22 2.79-.4.27-.76.41-1.08.4-.36-.01-1.04-.2-1.55-.37-.63-.2-1.12-.31-1.08-.66.02-.18.27-.36.74-.55 2.92-1.27 4.86-2.11 5.83-2.51 2.78-1.16 3.35-1.36 3.73-1.36.08 0 .27.02.39.12.1.08.13.19.14.27-.01.06.01.24 0 .37z"/></svg>
+            </a>
+            <a href="https://www.youtube.com/@dixonxteo" target="_blank" rel="noopener" class="social-icon-btn" aria-label="YouTube">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+            </a>
+            <a href="https://www.instagram.com/kirkoinsolidgoldfunding/" target="_blank" rel="noopener" class="social-icon-btn" aria-label="Instagram">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- Col 2: Programs -->
+        <div>
+          <div class="footer-title">Programs</div>
+          <ul class="footer-links">
+            <li><a href="#evaluations" class="footer-link">Forex 1-Step Challenge</a></li>
+            <li><a href="#evaluations" class="footer-link">Forex 2-Step Classic</a></li>
+            <li><a href="#evaluations" class="footer-link">Crypto 24/7 Evaluation</a></li>
+            <li><a href="#evaluations" class="footer-link">The Gold Rush (XAUUSD)</a></li>
+            <li><a href="#instant-funding" class="footer-link">Instant Funded X</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 3: Resources & Community -->
+        <div>
+          <div class="footer-title">Resources</div>
+          <ul class="footer-links">
+            <li><a href="#calculator" class="footer-link">ROI Profit Calculator</a></li>
+            <li><a href="#comparison" class="footer-link">Comparison Matrix</a></li>
+            <li><a href="#platforms" class="footer-link">Trading Platforms</a></li>
+            <li><a href="#event-spotlight" class="footer-link">Rat Race Breaker Event</a></li>
+            <li><a href="https://solidgoldfund.net/noticeboard.php" target="_blank" class="footer-link">Official Noticeboard</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 4: Support & Contact -->
+        <div>
+          <div class="footer-title">Contact Us</div>
+          <ul class="footer-links">
+            <li><a href="mailto:solidgoldfund@propaccount.com" class="footer-link">solidgoldfund@propaccount.com</a></li>
+            <li style="color:var(--text-secondary); font-size:0.9rem;">24/5 Dedicated Trader Support</li>
+            <li style="color:var(--emerald-profit); font-size:0.85rem;">● Systems Operational (99.99%)</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Legal & Affiliate Disclaimer -->
+      <div class="footer-disclaimer-box">
+        <strong style="color:var(--text-primary); display:block; margin-bottom:6px;">DISCLAIMER & REGULATORY NOTICE:</strong>
+        Solid Gold Fund is an affiliate of Prop Account, LLC. All funding assessments and evaluation accounts are provided by Prop Account, LLC and all assessment fees are paid directly to Prop Account, LLC. If you qualify for a Funded Account, you will enter into a Trader Agreement with Prop Account LC. Neither Prop Account, LLC nor Prop Account LC provides any investment, tax, or legal advice. All services provided are for educational and simulated evaluation purposes only.
+      </div>
+
+      <!-- Bottom Bar -->
+      <div class="footer-bottom">
+        <div>© 2026 SolidGoldFund.net — All Rights Reserved.</div>
+        <div style="display:flex; gap:20px;">
+          <a href="#faq" class="footer-link">Terms & Conditions</a>
+          <a href="#faq" class="footer-link">Privacy Policy</a>
+          <a href="#faq" class="footer-link">Risk Disclosure</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ==========================================================================
+       Floating Noticeboard Button & Expandable Drawer
+       ========================================================================== -->
+  <button class="floating-notice-btn" id="floating-notice-btn">
+    <span class="notice-dot"></span>
+    <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 22c1.1 0 2-.9 2-2h-4c0 1.1.9 2 2 2zm6-6v-5c0-3.07-1.63-5.64-4.5-6.32V4c0-.83-.67-1.5-1.5-1.5s-1.5.67-1.5 1.5v.68C7.64 5.36 6 7.92 6 11v5l-2 2v1h16v-1l-2-2zm-2 1H8v-6c0-2.48 1.51-4.5 4-4.5s4 2.02 4 4.5v6z"/></svg>
+    <span>Announcements</span>
+  </button>
+
+  <div class="notice-drawer-overlay" id="notice-drawer-overlay">
+    <div class="notice-drawer">
+      <div class="notice-drawer-header">
+        <div style="display:flex; align-items:center; gap:10px;">
+          <span style="font-size:1.2rem;">📢</span>
+          <span style="font-weight:800; font-size:1.1rem; color:var(--gold-light);">Noticeboard & News</span>
+        </div>
+        <button class="drawer-close-btn notice-close-btn">&times;</button>
+      </div>
+
+      <div style="display:flex; flex-direction:column; gap:18px; overflow-y:auto;">
+        <div class="glass-card" style="padding:18px; border-color:var(--border-gold);">
+          <div class="badge badge-gold" style="margin-bottom:8px;">🔥 Special Promotion</div>
+          <div style="font-weight:700; margin-bottom:4px;">10% Discount Code Active</div>
+          <p style="font-size:0.85rem; color:var(--text-secondary); margin-bottom:10px;">
+            Apply code <strong class="text-gold">GOLDRUSH10</strong> at checkout for 10% off any evaluation plus 100% fee refund on your first payout.
+          </p>
+        </div>
+
+        <div class="glass-card" style="padding:18px;">
+          <div class="badge badge-emerald" style="margin-bottom:8px;">Live Event</div>
+          <div style="font-weight:700; margin-bottom:4px;">Rat Race Breaker Zoom Masterclass</div>
+          <p style="font-size:0.85rem; color:var(--text-secondary); margin-bottom:10px;">
+            Upcoming 2-day live event on Zoom. Limited to 300 serious traders.
+          </p>
+          <button class="btn btn-secondary btn-sm trigger-masterclass" style="width:100%;">Reserve Spot</button>
+        </div>
+
+        <div class="glass-card" style="padding:18px;">
+          <div style="font-weight:700; margin-bottom:4px;">Zero Payout Denials Record</div>
+          <p style="font-size:0.85rem; color:var(--text-secondary);">
+            Solid Gold Fund maintains a 100% flawless payout record with over $1,900,000 processed to date.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ==========================================================================
+       Checkout Modal (Simulated Interactive Checkout Workflow)
+       ========================================================================== -->
+  <div class="modal-backdrop" id="checkout-modal">
+    <div class="modal-content-box">
+      <button class="modal-close-btn">&times;</button>
+      
+      <div style="margin-bottom:24px;">
+        <div class="badge badge-gold" style="margin-bottom:8px;">SECURE CHECKOUT</div>
+        <h2 style="font-size:1.8rem; margin-bottom:4px;">Order <span class="text-gradient-gold">Evaluation Account</span></h2>
+        <p style="color:var(--text-secondary); font-size:0.9rem;">Instant automated credential dispatch to your email.</p>
+      </div>
+
+      <div class="glass-card" style="padding:18px; margin-bottom:20px; background:rgba(10,14,24,0.7);">
+        <div style="display:flex; justify-content:space-between; margin-bottom:8px;">
+          <span class="text-muted">Selected Plan:</span>
+          <strong id="modal-summary-plan" style="color:var(--gold-light);">Forex X-1 Step Evaluation</strong>
+        </div>
+        <div style="display:flex; justify-content:space-between; margin-bottom:8px;">
+          <span class="text-muted">Account Capital:</span>
+          <strong id="modal-summary-size" class="font-mono">$100,000</strong>
+        </div>
+        <div style="display:flex; justify-content:space-between; border-top:1px dashed rgba(255,255,255,0.1); padding-top:10px; margin-top:10px;">
+          <span style="font-weight:700;">Total Fee:</span>
+          <strong id="modal-summary-fee" class="font-mono text-gradient-gold" style="font-size:1.4rem;">$795</strong>
+        </div>
+      </div>
+
+      <!-- Promo Code Section -->
+      <div style="display:flex; gap:10px; margin-bottom:14px;">
+        <input type="text" id="promo-code-input" placeholder="Promo Code (try GOLDRUSH10)" style="flex:1; background:rgba(255,255,255,0.03); border:1px solid var(--border-subtle); border-radius:10px; padding:10px 14px; color:var(--text-primary); font-family:var(--font-mono); text-transform:uppercase;">
+        <button class="btn btn-secondary btn-sm" id="apply-promo-btn">Apply</button>
+      </div>
+      <div id="promo-success-notice" style="display:none; color:var(--emerald-profit); font-size:0.85rem; margin-bottom:16px;">
+        ✓ Code Applied: 10% Discount + 100% Refundable Guarantee Active!
+      </div>
+
+      <form id="simulated-checkout-form">
+        <div style="display:grid; grid-template-columns:1fr 1fr; gap:12px; margin-bottom:12px;">
+          <input type="text" placeholder="First Name" required style="background:rgba(255,255,255,0.03); border:1px solid var(--border-subtle); border-radius:10px; padding:12px 14px; color:var(--text-primary); outline:none;">
+          <input type="text" placeholder="Last Name" required style="background:rgba(255,255,255,0.03); border:1px solid var(--border-subtle); border-radius:10px; padding:12px 14px; color:var(--text-primary); outline:none;">
+        </div>
+        <input type="email" placeholder="Trader Email Address (For Credentials)" required style="width:100%; background:rgba(255,255,255,0.03); border:1px solid var(--border-subtle); border-radius:10px; padding:12px 14px; color:var(--text-primary); margin-bottom:16px; outline:none;">
+
+        <div style="margin-bottom:20px;">
+          <span style="font-size:0.85rem; color:var(--text-muted); display:block; margin-bottom:8px;">Select Payment Method:</span>
+          <div style="display:grid; grid-template-columns:repeat(3, 1fr); gap:10px;">
+            <label style="display:flex; align-items:center; gap:8px; background:rgba(245,176,38,0.1); border:1px solid var(--border-gold); padding:10px; border-radius:8px; cursor:pointer; font-size:0.85rem; font-weight:700;">
+              <input type="radio" name="payment-method" checked style="accent-color:var(--gold-primary);"> USDT / Crypto
+            </label>
+            <label style="display:flex; align-items:center; gap:8px; background:rgba(255,255,255,0.03); border:1px solid var(--border-subtle); padding:10px; border-radius:8px; cursor:pointer; font-size:0.85rem;">
+              <input type="radio" name="payment-method" style="accent-color:var(--gold-primary);"> Credit Card
+            </label>
+            <label style="display:flex; align-items:center; gap:8px; background:rgba(255,255,255,0.03); border:1px solid var(--border-subtle); padding:10px; border-radius:8px; cursor:pointer; font-size:0.85rem;">
+              <input type="radio" name="payment-method" style="accent-color:var(--gold-primary);"> Bank Wire
+            </label>
+          </div>
+        </div>
+
+        <button type="submit" class="btn btn-primary btn-lg" style="width:100%;">
+          Complete Order & Launch Account
+        </button>
+      </form>
+    </div>
+  </div>
+
+  <!-- ==========================================================================
+       Masterclass Reservation Modal
+       ========================================================================== -->
+  <div class="modal-backdrop" id="masterclass-modal">
+    <div class="modal-content-box">
+      <button class="modal-close-btn">&times;</button>
+      
+      <div style="margin-bottom:20px;">
+        <div class="badge badge-gold" style="margin-bottom:8px;">VIP REGISTRATION</div>
+        <h2 style="font-size:1.8rem; margin-bottom:4px;">Rat Race Breaker <span class="text-gradient-gold">Masterclass</span></h2>
+        <p style="color:var(--text-secondary); font-size:0.9rem;">2-Day Live Zoom Intensive with institutional prop mentors.</p>
+      </div>
+
+      <form id="masterclass-form">
+        <input type="text" placeholder="Full Name" required style="width:100%; background:rgba(255,255,255,0.03); border:1px solid var(--border-subtle); border-radius:10px; padding:12px 14px; color:var(--text-primary); margin-bottom:12px; outline:none;">
+        <input type="email" placeholder="Email Address for Zoom Link" required style="width:100%; background:rgba(255,255,255,0.03); border:1px solid var(--border-subtle); border-radius:10px; padding:12px 14px; color:var(--text-primary); margin-bottom:12px; outline:none;">
+        <input type="tel" placeholder="WhatsApp / Telegram Number (Optional Reminder)" style="width:100%; background:rgba(255,255,255,0.03); border:1px solid var(--border-subtle); border-radius:10px; padding:12px 14px; color:var(--text-primary); margin-bottom:20px; outline:none;">
+
+        <button type="submit" class="btn btn-primary btn-lg" style="width:100%;">
+          Confirm My VIP Seat (Free)
+        </button>
+      </form>
+    </div>
+  </div>
+
+  <!-- Scripts -->
+  <script src="js/particles.js"></script>
+  <script src="js/ticker.js"></script>
+  <script src="js/calculator.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>

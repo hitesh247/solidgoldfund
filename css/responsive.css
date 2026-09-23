@@ -1,0 +1,222 @@
+/* ==========================================================================
+   SOLID GOLD FUND - RESPONSIVE STYLES
+   ========================================================================== */
+
+/* Large Screens & Desktops (<= 1200px) */
+@media (max-width: 1200px) {
+  .hero-grid {
+    grid-template-columns: 1fr;
+    text-align: center;
+    gap: 60px;
+  }
+
+  .hero-subtitle {
+    margin: 0 auto 36px;
+  }
+
+  .hero-cta-group {
+    justify-content: center;
+  }
+
+  .hero-stats-banner {
+    max-width: 650px;
+    margin: 0 auto;
+  }
+
+  .hero-visual {
+    margin-top: 20px;
+  }
+
+  .event-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .configurator-details-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .calculator-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .platform-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .faq-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .faq-categories-nav {
+    flex-direction: row;
+    overflow-x: auto;
+    padding-bottom: 12px;
+  }
+
+  .footer-top-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+/* Tablets (<= 992px) */
+@media (max-width: 992px) {
+  .nav-menu, .nav-actions .btn-secondary {
+    display: none;
+  }
+
+  .mobile-nav-toggle {
+    display: flex;
+  }
+
+  .section {
+    padding: 70px 0;
+  }
+
+  .hero-stats-banner {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+
+  .platform-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Mobile Devices (<= 768px) */
+@media (max-width: 768px) {
+  :root {
+    --header-height: 70px;
+  }
+
+  .container {
+    padding: 0 16px;
+  }
+
+  .hero-title {
+    font-size: 2.2rem;
+  }
+
+  .hero-stats-banner {
+    grid-template-columns: 1fr 1fr;
+    padding: 16px;
+  }
+
+  .stat-number {
+    font-size: 1.3rem;
+  }
+
+  .configurator-wrapper {
+    padding: 20px;
+  }
+
+  .size-pills-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .calculator-card {
+    padding: 24px;
+  }
+
+  .calc-payout-amount {
+    font-size: 2.4rem;
+  }
+
+  .footer-top-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .footer-bottom {
+    flex-direction: column;
+    gap: 16px;
+    text-align: center;
+  }
+
+  .hero-floating-card {
+    display: none;
+  }
+
+  .floating-notice-btn {
+    bottom: 20px;
+    left: 20px;
+    padding: 12px 18px;
+    font-size: 0.78rem;
+  }
+}
+
+/* Small Mobile (<= 480px) */
+@media (max-width: 480px) {
+  .size-pills-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .btn-lg {
+    padding: 14px 24px;
+    font-size: 0.95rem;
+    width: 100%;
+  }
+
+  .hero-cta-group .btn {
+    width: 100%;
+  }
+
+  .countdown-timer-wrap {
+    justify-content: center;
+  }
+
+  .countdown-box {
+    min-width: 60px;
+    padding: 8px 10px;
+  }
+
+  .countdown-val {
+    font-size: 1.3rem;
+  }
+
+  .total-fee-amount {
+    font-size: 2rem;
+  }
+}
+
+/* Mobile Navigation Drawer Modal */
+.mobile-nav-drawer {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 320px;
+  max-width: 85vw;
+  height: 100vh;
+  background: var(--bg-secondary);
+  border-left: 1px solid var(--border-gold);
+  z-index: 10000;
+  transform: translateX(100%);
+  transition: transform var(--transition-smooth);
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-shadow: -20px 0 50px rgba(0, 0, 0, 0.8);
+}
+
+.mobile-nav-drawer.active {
+  transform: translateX(0);
+}
+
+.mobile-nav-links {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin-top: 30px;
+}
+
+.mobile-nav-links a {
+  color: var(--text-primary);
+  font-size: 1.15rem;
+  font-weight: 700;
+  text-decoration: none;
+  transition: color var(--transition-fast);
+}
+
+.mobile-nav-links a:hover {
+  color: var(--gold-light);
+}
