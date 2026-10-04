@@ -425,16 +425,17 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .brand-logo-img {
-  height: 58px;
+  height: 56px;
   width: auto;
-  max-width: 230px;
+  max-width: 240px;
   object-fit: contain;
-  filter: drop-shadow(0 0 14px rgba(245, 176, 38, 0.45));
+  mix-blend-mode: screen;
+  filter: drop-shadow(0 0 16px rgba(245, 176, 38, 0.45));
   transition: filter var(--transition-fast), transform var(--transition-fast);
 }
 
 .brand-logo:hover .brand-logo-img {
-  filter: drop-shadow(0 0 24px rgba(245, 176, 38, 0.85));
+  filter: drop-shadow(0 0 28px rgba(245, 176, 38, 0.9));
   transform: scale(1.04);
 }
 
